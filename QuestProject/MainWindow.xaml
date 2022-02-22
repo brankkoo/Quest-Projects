@@ -1,0 +1,57 @@
+﻿<Window x:Class="QuestProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuestProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400" Loaded="Window_Loaded" >
+
+
+
+
+    <Grid>
+
+        <Menu DockPanel.Dock="Top" RenderTransformOrigin="0.518,-5.15" Margin="0,0,0,539">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="newbtn" Header="_New" Click="newbtn_Click" />
+                <MenuItem x:Name="Openbtn" Header="_Open" Click="Openbtn_Click" />
+                <MenuItem x:Name="savebtn" Header="_Save" Click="savebtn_Click" />
+                <Separator></Separator>
+                <MenuItem x:Name="SaveAs" Header="_Save As" Click="SaveAs_Click"></MenuItem>
+                
+                
+                
+            </MenuItem>
+            <MenuItem x:Name="Recent" Header="_Recent" >
+                
+            </MenuItem>
+        </Menu>
+
+        <StackPanel HorizontalAlignment="Left" Height="506" Margin="30,30,0,0" VerticalAlignment="Top" Width="326">
+            <Label Content="Project Name"></Label>
+            <TextBox x:Name="ProjectBox" Height="24" TextWrapping="Wrap"  AcceptsReturn="False" />
+            <Label Content="Description"></Label>
+            <TextBox x:Name="DescriptionBox" Height="95" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <Label Content="Folder Path" Margin="0,0,228,0"></Label>
+            <TextBox x:Name="FolderBox" Height="24" IsEnabled="False"></TextBox>
+            <Label Content="Start Date" Margin="0,0,228,0"></Label>
+            <DatePicker x:Name="StartDate" Margin="0,0,195,0"></DatePicker>
+            <Label Content="End Date" HorizontalAlignment="Left" Width="131"/>
+            <DatePicker x:Name="EndDate" Margin="0,0,195,0"></DatePicker>
+            <Label Content="Maximum number of results"></Label>
+            <TextBox x:Name="results" Height="24" Margin="0,0,195,0" TextChanged="results_TextChanged"></TextBox>
+            <CheckBox x:Name="Notify" Content="Enable Notifications" Margin="0,10,0,10"/>
+            <Label Content="Project Type"></Label>
+            <ComboBox x:Name="ProjectType">
+                <ComboBoxItem x:Name="firstItem" IsSelected="True">Simple</ComboBoxItem>
+                <ComboBoxItem>Mixed</ComboBoxItem>
+                <ComboBoxItem>Complex</ComboBoxItem>
+            </ComboBox>
+
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

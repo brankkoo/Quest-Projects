@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <projectName>cao</projectName>
+  <description>cao</description>
+  <startDate>2021-07-19T00:00:00</startDate>
+  <endDate>2021-07-31T00:00:00</endDate>
+  <maxResults>55</maxResults>
+  <notification>true</notification>
+  <projectType>2</projectType>
+</ProjectInfo>

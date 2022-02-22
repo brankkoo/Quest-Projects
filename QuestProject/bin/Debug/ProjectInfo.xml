@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <projectName>hi</projectName>
+  <description>hi</description>
+  <startDate>2021-07-06T00:00:00</startDate>
+  <endDate>2021-07-29T00:00:00</endDate>
+  <maxResults>12</maxResults>
+  <notification>true</notification>
+  <projectType>Complex</projectType>
+</ProjectInfo>
